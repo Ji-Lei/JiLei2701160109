@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- 设置标签图标 -->
+	<link rel="icon" href="image/纪雷.jpg">
+    <title>标签属性集合</title>
+	<!-- css模板 -->
+	<style type="text/css">
+		marquee{
+			background-color: red;
+			width: 200px;
+			height: 100px;
+			background-color: rgba(255,0,0,0.5);
+		}
+	</style>
+</head>
+<body>
+<!-- 无序表 -->
+<h1>四大名著</h1>
+  <ul><!-- 无序表 -->
+  	<li>
+  	<h2>水浒传</h2>
+  	<p>很好看的小说</p>
+  	<ul>
+  		<li>
+  			内容丰富
+  		</li>
+  		<li>
+  			文化艺术
+  		</li>
+  	</ul>
+  </li>
+  <li>
+  	<h2>三国演义</h2>
+  	<p>很好看的小说</p>
+  	<ul>
+  		<li>
+  			内容丰富
+  		</li>
+  		<li>
+  			文化艺术
+  		</li>
+  	</ul>
+  </li>
+  <li>
+  	<h2>西游记</h2>
+  	<p>很好看的小说</p>
+  	<ul>
+  		<li>
+  			内容丰富
+  		</li>
+  		<li>
+  			文化艺术
+  		</li>
+  	</ul>
+  </li>
+  <li>
+  	<h2>水浒传</h2>
+  	<p>很好看的小说</p>
+  	<ul>
+  		<li>
+  			内容丰富
+  		</li>
+  		<li>
+  			文化艺术
+  		</li>
+  	</ul>
+  </li>
+  </ul>	
+<hr>
+<!-- 单元格合并 -->
+<table bgcolor="black" cellspacing="1px" width="500px" height="300px" align="center">
+   	<tr bgcolor="white">
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   	</tr>
+   	<tr bgcolor="white">
+   		
+   		<td colspan="2" rowspan="2"></td>
+   		<!-- 合并的原理是一个单元格扩展成原来的两倍大小，那么要删除其他单元格 -->
+   		<!-- conspan横向合并单元格,rowsapn纵向和并单元格 -->
+   		<!-- <td></td> -->
+   		<td></td>
+   	</tr>
+   	<tr bgcolor="white">
+   		<td></td>
+   		<!-- <td></td>
+   		<td></td> -->
+   	</tr>
+   	<tr bgcolor="white">
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   	</tr>
+</table>
+<hr>
+<!-- 表格属性标签table -->
+<table bgcolor="black" cellspacing="1px" width="800px">
+		<caption>
+			<h2>关系示意图</h2>
+		</caption><!-- caption属性将标题定义在表格的正中间 -->
+		<tr bgcolor="#a9a9a9"><!-- tr属性规定表的行 -->
+			<!-- tr里面会有valign标签，标签里面对应bottom下和上 -->
+			<!-- align标签中对应左中右right -->
+			<!-- 设置灰度值 -->
+			<th>素菜</th>
+			<!-- th是居中加粗标签 用来存储标题样式，同时是列元素-->
+			<th>水果</th>
+			<th>河鱼</th>
+			<th>价格</th>
+			<th>重量</th>
+			<th>特征</th>
+			<th>地址</th>
+		</tr>
+		<tr align="center" heght="500px" bgcolor="white">
+			<td>白菜</td><!-- 定义标的列 -->
+			<td>苹果</td>
+			<td>鲫鱼</td>
+			<td>32元</td>
+			<td>15斤</td>
+			<td>好吃</td>
+			<td>
+            <a href="https://www.baidu.com/" target="_blank">百度</a>
+			</td>
+		</tr>
+		<tr align="center" heght="500px" bgcolor="white">
+			<td>白菜</td><!-- 定义标的列 -->
+			<td>苹果</td>
+			<td>鲫鱼</td>
+			<td>32元</td>
+			<td>15斤</td>
+			<td>好吃</td>
+			<td>
+            <a href="https://www.baidu.com/" target="_blank">百度</a>
+			</td>
+		</tr>
+		<tr align="center" heght="500px" bgcolor="white">
+			<td>白菜</td><!-- 定义标的列 -->
+			<td>苹果</td>
+			<td>鲫鱼</td>
+			<td>32元</td>
+			<td>15斤</td>
+			<td>好吃</td>
+			<td>
+            <a href="https://www.baidu.com/" target="_blank">百度</a>
+			</td>
+		</tr>
+		<tr align="center" heght="500px" bgcolor="white">
+			<td>白菜</td><!-- 定义标的列 -->
+			<td>苹果</td>
+			<td>鲫鱼</td>
+			<td>32元</td>
+			<td>15斤</td>
+			<td>好吃</td>
+			<td>
+            <a href="https://www.baidu.com/" target="_blank">百度</a>
+            <!-- target跳转属性，_bland新增页面，_self本页面 -->
+			</td>
+		</tr>
+	</table>
+<hr>
+<a href="https://www.baidu.com/">百度一下，你就知道！</a>
+<a href="image/我俩.mp4">我俩</a>
+<hr><!-- 分割线 -->
+    <select><!-- 选择标签，只能供选择，不能输入 -->
+    	<optgroup label="名字"><!-- 分类属性，按名字分类 -->
+    	<option>背景</option>
+    	<option>纪雷</option>
+    	<option>美好</option>
+    	</optgroup>
+    	<optgroup label="外号">
+    	<option>魔鬼</option>
+    	<option>大大</option>
+    	<option selected="selected">小小</option><!-- 设置默认值 --></optgroup>
+    </select>
+    输入:<input type="text" list="纪雷"><br>
+<datalist id="纪雷"><!-- 预选属性 -->
+	<option>纪雷</option>
+	<option>闫美好</option>
+	<option>纪小雷</option>
+	<option>闫姗姗</option>
+	<option>闫宝宝</option>
+	<option>纪宝宝</option>
+</datalist>
+<hr>
+<!-- 视频播放 -->
+<video src="image/我俩.mp4" controls="controls" width="800px"></video>
+<!-- autoplay需要自动播放视屏 -->
+<!-- <video autoplay="autoplay">浏览器适配问题播放可以播放的格式
+	<source src="image/我俩.mp4" type="video/mp4">
+	<source src="image/我俩.webm" type="video/webm">
+	<source src="image/我俩.ogg" type="video/ogg">
+</video> -->
+<hr>
+<!-- 
+autoplay需要自动播放视屏音乐
+controls控制条和音量等属性
+poster视屏显示之前显示一张图片
+loop一般用于广告，视屏播放完重复播放
+preload预览加载，提前缓存autoplay先用，prelaod会失效
+muted静音
+ -->
+<!--  音乐播放 -->
+<audio src="image/Honor.mp3" controls="controls" loop="loop"></audio>
+<audio controls="controls" loop="loop">
+	<!-- 兼容模式，播放其中可以播放的格式 -->
+	<source src="image/莫文蔚郑少秋-世间始终你好.flac" type="audio/flac">
+	<source src="image/莫文蔚郑少秋-世间始终你好.mp3" type="audio/mp3">
+	<!-- <source src="image/Honor.mp3" type="audio/mp3"> -->
+</audio>
+<hr>
+<!-- 滚动标签 -->
+<marquee direction="right">纪雷</marquee>
+<marquee direction="up">纪雷</marquee>
+<marquee direction="down">纪雷</marquee><!-- 滚动方向 -->
+<hr>
+<marquee scrollamount="1">纪雷</marquee>
+<marquee scrollamount="100">纪雷</marquee><!-- 滚动速度 -->
+<hr>
+<marquee loop="2">纪雷</marquee><!-- 滚动次数 -->
+<hr>
+<!-- 滚动类型 -->
+<marquee behavior="slide">
+ <img src="image/美好.gif" width="40px">
+</marquee><!-- 边界停止 -->
+<marquee behavior="alternate">
+<img src="image/纪雷.jpg" width="40px">
+</marquee><!-- 到达边界返回 -->
+<!-- 也能滚动图片 -->
+<hr>
+<!-- a标签跳转 -->
+<a href="#123" target="_self">跳转到底部</a>
+<!--id跳转，跳转到本页id为123的位置-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h>我是中部</h>
+    <a href="跳转练习.html#123" target="_blank">跳转练习</a>
+    <!--self本页面跳转,blank新页面跳转-->
+    <!-- 跳转练习.html#123，跳转到“跳转练习界面，id为123的位置” -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h id="123">我是底部</h><!--id属性元素的地址-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</a>
+</body>
+</html>
